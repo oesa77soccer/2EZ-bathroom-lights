@@ -3,8 +3,7 @@
 <body>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  Name: <input type="text" name="fname">
-  <input type="submit" name="fname">
+  <input type="submit" value="rainbow" name="fname">
 </form>
 
 <?php
@@ -15,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Name is empty";
     } else {
         echo $name;
+        exec("python send.py");
     }
 }
 ?>
