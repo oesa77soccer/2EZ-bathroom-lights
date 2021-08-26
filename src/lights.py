@@ -1,6 +1,7 @@
 import time
 import board
 import neopixel
+import socket
 
 # Choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D18
 # NeoPixels must be connected to D10, D12, D18 or D21 to work.
@@ -10,13 +11,15 @@ pixel_pin = board.D21
 num_pixels = 150
 
 # The order of the pixel colors - RGB or GRB. Some NeoPixels have red and green reversed!
-# For RGBW NeoPixels, simply change the ORDER to RGBW or GRBW.
 ORDER = neopixel.RGB
 
 pixels = neopixel.NeoPixel(
   pixel_pin, num_pixels, brightness=0.8, auto_write=False, pixel_order=ORDER
 )
 
+def wipe(color):
+  pixels.fill(color)
+  pixels.show()
 
 def wheel(pos):
     # Input a value 0 to 255 to get a color value.
@@ -49,9 +52,31 @@ def rainbow_cycle(wait):
         time.sleep(wait)
 
 
-while True:
-    #pixels.fill((255, 0, 0))
-    #pixels.show()
-    #time.sleep(1)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind(('localhost', 50000))
 
-    rainbow_cycle(0.01)  # rainbow cycle with 10ms delay per step
+
+while True:
+  #pixels.fill((255, 0, 0))
+  #pixels.show()
+  #time.sleep(1)
+  try:
+    # read in input
+    s.listen(1)
+    conn, addr = s.accept()
+    data = conn.recv()  # 1024)
+
+    if data:
+      wipe((100, 0, 0))
+      conn.sendall(data)
+      break
+    else:
+      rainbow_cycle(0.01)
+
+    # display data
+    #rainbow_cycle(0.01)  # rainbow cycle with 10ms delay per step
+  except:
+    # write out error to log
+    pass
+
+conn.close()
