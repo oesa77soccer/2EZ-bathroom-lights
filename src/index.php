@@ -12,6 +12,8 @@
   <input type="range" min="0" max="255" value="0" class="slider" id="myRange">
 </div>
 
+<p>Value: <span id="demo"></span></p>
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
