@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<link rel="stylesheet" type="text/css" href="/var/www/html/2EZ-bathroom-lights/src/css/style.css">
-<script type="text/javascript" src="js/javascript-stuff.js"></script>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   <input type="submit" value="rainbow" name="fname">
@@ -27,5 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<link rel="stylesheet" type="text/css" href="/var/www/html/2EZ-bathroom-lights/src/css/style.css">
+<script type="text/javascript" src="js/javascript-stuff.js"></script>
 </body>
 </html>
