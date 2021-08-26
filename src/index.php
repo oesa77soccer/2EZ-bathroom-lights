@@ -2,7 +2,7 @@
 <html>
 <body>
 <link rel="stylesheet" type="text/css" href="/var/www/html/2EZ-bathroom-lights/src/css/style.css">
-<script src="js/javascript-stuff.js"></script>
+<script type="text/javascript" src="js/javascript-stuff.js"></script>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   <input type="submit" value="rainbow" name="fname">
