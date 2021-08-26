@@ -64,10 +64,10 @@ while True:
     # read in input
     s.listen(1)
     conn, addr = s.accept()
-    data = conn.recv()  # 1024)
+    data = conn.recv(1024)  # 1024)
 
     if data:
-      wipe((100, 0, 0))
+      wipe((200, 0, 0))
       conn.sendall(data)
       break
     else:
