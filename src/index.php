@@ -2,7 +2,7 @@
 <html>
 <body>
 <link rel="stylesheet" type="text/css" href="/var/www/html/2EZ-bathroom-lights/src/css/style.css">
-<script src="/var/www/html/2EZ-bathroom-lights/src/js/javascript-stuff.js"></script>
+<script src="./js/javascript-stuff.js"></script>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   <input type="submit" value="rainbow" name="fname">
@@ -26,16 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
-<script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-</script>
 
 </body>
 </html>
