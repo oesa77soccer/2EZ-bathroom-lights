@@ -20,7 +20,7 @@ blue_val.innerHTML = blue_slider.value;
 red_slider.oninput = function() {
   red = this.value;
   red_val.innerHTML = red;
-  alert(red);
+  console.log(red);
   send();
 }
 
