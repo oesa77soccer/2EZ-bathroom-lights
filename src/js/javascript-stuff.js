@@ -11,9 +11,9 @@ var red_val = document.getElementById("red_val");
 var green_val = document.getElementById("green_val");
 var blue_val = document.getElementById("blue_val");
 
-red_value.innerHTML = red_slider.value;
-green_value.innerHTML = green_slider.value;
-blue_value.innerHTML = blue_slider.value;
+red_val.innerHTML = red_slider.value;
+green_val.innerHTML = green_slider.value;
+blue_val.innerHTML = blue_slider.value;
 
 // TODO: update only after last touch
 // Update the current slider value (each time you drag the slider handle)
