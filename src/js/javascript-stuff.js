@@ -15,7 +15,7 @@ function send(input) {
   $.ajax({
       type: "POST",
       url: "/var/www/html/2EZ-bathroom-lights/src/send.py",
-      //data: { param: input },
+      data: { param: input },
       success: callbackFunc
   });
 }
