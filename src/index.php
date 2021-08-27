@@ -2,22 +2,23 @@
 <html>
 <body>
 
+<div>
+
+</div>
+
 <div class="slidecontainer">
-  Red
   <input type="range" min="0" max="255" value="0" class="slider" id="red_slider">
-  <span id="red_val">0</span>
+  <div class="text">Red: <span id="red_val">0</span></div>
 </div>
 
 <div class="slidecontainer">
-  Green
   <input type="range" min="0" max="255" value="0" class="slider" id="green_slider">
-  <span id="green_val">0</span>
+  <div class="text">Green: <span id="green_val">0</span></div>
 </div>
 
 <div class="slidecontainer">
-  Blue
   <input type="range" min="0" max="255" value="0" class="slider" id="blue_slider">
-  <span id="blue_val">0</span>
+  <div class="text">Blue: <span id="blue_val">0</span></div>
 </div>
 
 <button class="modebtn" id="wipe_btn">Wipe</button>
