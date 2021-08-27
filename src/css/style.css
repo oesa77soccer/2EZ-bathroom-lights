@@ -1,7 +1,7 @@
 .bodycontainer {
   width: 100%;
   height: 100%;
-  background-color: #04AA6D;
+  background-color: #a7f5d8;
 }
 
 .banner {
@@ -62,8 +62,8 @@
 .modebtn {
   width: 120px;
   height: 65px;
-  background: #04AA6D;
-  color: #fff;
+  background: #fff;
+  color: #000000;
 }
 
 .valtext {
