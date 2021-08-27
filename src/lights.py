@@ -68,7 +68,7 @@ while True:
 
     if data:
       data_str = str(data, "ascii")
-      args = data.split()
+      args = data_str.split()
       mode = args[3]
       if mode == "wipe":
         wipe(args[0], args[1], args[2]))
