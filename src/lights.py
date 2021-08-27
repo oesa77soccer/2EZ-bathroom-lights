@@ -67,7 +67,13 @@ while True:
     data = conn.recv(1024)  # 1024)
 
     if data:
-      wipe((int(data), 0, 0))
+      data_str = str(data, "ascii")
+      args = data.split()
+      mode = args[3]
+      if mode == "wipe":
+        wipe(args[0], args[1], args[2]))
+      else:
+        rainbow_cycle(0.01)
       conn.sendall(data)
     #  break
     #else:
