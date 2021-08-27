@@ -18,6 +18,7 @@ pixels = neopixel.NeoPixel(
 )
 
 def wipe(color):
+  print(wipe)
   pixels.fill(color)
   pixels.show()
 
