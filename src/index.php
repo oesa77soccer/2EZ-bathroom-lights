@@ -2,10 +2,6 @@
 <html>
 <body>
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  <input type="submit" value="rainbow" name="rainbow">
-</form>
-
 <div class="slidecontainer">
   Red
   <input type="range" min="0" max="255" value="0" class="slider" id="red_slider">
@@ -23,6 +19,14 @@
   <input type="range" min="0" max="255" value="0" class="slider" id="blue_slider">
   <span id="blue_val"></span>
 </div>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  <input type="submit" value="Wipe" name="wipe" id="wipe">
+</form>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  <input type="submit" value="Rainbow" name="rainbow" id="rainbow">
+</form>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
