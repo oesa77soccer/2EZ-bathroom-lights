@@ -14,8 +14,8 @@ slider.oninput = function() {
 function send(input) {
   $.ajax({
       type: "POST",
-      url: "send.py",
-      data: { param: input },
+      url: "/var/www/html/2EZ-bathroom-lights/src/send.py",
+      //data: { param: input },
       success: callbackFunc
   });
 }
