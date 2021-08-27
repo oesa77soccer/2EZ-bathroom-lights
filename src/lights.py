@@ -67,7 +67,7 @@ while True:
     data = conn.recv(1024)  # 1024)
 
     if data:
-      wipe((200, 0, 0))
+      wipe((int(data), 0, 0))
       conn.sendall(data)
     #  break
     #else:
