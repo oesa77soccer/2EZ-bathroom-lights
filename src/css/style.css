@@ -21,6 +21,7 @@
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
+  margin-top: 20px;
 }
 
 /* The slider itself */
@@ -46,16 +47,9 @@
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 75px; /* Set a specific slider handle width */
-  height: 75px; /* Slider handle height */
+  width: 120px; /* Set a specific slider handle width */
+  height: 120px; /* Slider handle height */
   background: #4cb897; /* Green background */
-  cursor: pointer; /* Cursor on hover */
-}
-
-.slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #04AA6D; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
