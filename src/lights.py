@@ -74,7 +74,7 @@ while True:
       mode = args[3]
       if mode == "wipe":
         print("wiped")
-        wipe((args[0], args[1], args[2]))
+        wipe((int(args[0]), int(args[1]), int(args[2])))
       else:
         print("rainbow")
         rainbow_cycle(0.01)
@@ -87,6 +87,6 @@ while True:
     #rainbow_cycle(0.01)  # rainbow cycle with 10ms delay per step
   except:
     # write out error to log
-    pass
+    print("Error")
 
 conn.close()
