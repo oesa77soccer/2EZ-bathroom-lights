@@ -2,27 +2,27 @@
 <html>
 <body>
 
-<div>
-
-</div>
+<div class="banner">2EZ Lights</div>
 
 <div class="slidecontainer">
   <input type="range" min="0" max="255" value="0" class="slider" id="red_slider">
-  <div class="text">Red: <span id="red_val">0</span></div>
+  <div class="valtext">Red: <span id="red_val">0</span></div>
 </div>
 
 <div class="slidecontainer">
   <input type="range" min="0" max="255" value="0" class="slider" id="green_slider">
-  <div class="text">Green: <span id="green_val">0</span></div>
+  <div class="valtext">Green: <span id="green_val">0</span></div>
 </div>
 
 <div class="slidecontainer">
   <input type="range" min="0" max="255" value="0" class="slider" id="blue_slider">
-  <div class="text">Blue: <span id="blue_val">0</span></div>
+  <div class="valtext">Blue: <span id="blue_val">0</span></div>
 </div>
 
-<button class="modebtn" id="wipe_btn">Wipe</button>
-<button class="modebtn" id="rainbow_btn">Rainbow</button>
+<div class="btncontainer">
+  <button class="modebtn" id="wipe_btn">Wipe</button>
+  <button class="modebtn" id="rainbow_btn">Rainbow</button>
+</div>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

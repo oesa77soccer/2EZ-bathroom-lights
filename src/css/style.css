@@ -3,6 +3,7 @@
   height: 60px;
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
+  color: #fff;
 }
 
 .slidecontainer {
@@ -51,6 +52,6 @@
   color: #fff;
 }
 
-.text {
+.valtext {
   color: #fff;
 }
