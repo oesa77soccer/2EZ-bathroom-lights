@@ -3,9 +3,12 @@
   height: 100px;
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
+}
+
+.bannertext {
   color: #fff;
   text-align: center;
-  font-size: 60px;
+  font-size: 80%;
   margin: auto;
 }
 

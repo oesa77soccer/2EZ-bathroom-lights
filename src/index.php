@@ -2,7 +2,9 @@
 <html>
 <body>
 
-<div class="banner">2EZ Lights</div>
+<div class="banner">
+  <span class="bannertext">2EZ Lights</span>
+</div>
 
 <div class="slidecontainer">
   <input type="range" min="0" max="255" value="0" class="slider" id="red_slider">
