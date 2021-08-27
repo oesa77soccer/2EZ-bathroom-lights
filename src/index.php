@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<link rel="stylesheet" type="text/css" href="/var/www/html/2EZ-bathroom-lights/src/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/javascript-stuff.js"></script>
 </body>
 </html>
