@@ -69,9 +69,9 @@ while True:
     if data:
       wipe((0, 200, 0))
       conn.sendall(data)
-      break
-    else:
-      rainbow_cycle(0.01)
+    #  break
+    #else:
+    #  rainbow_cycle(0.01)
 
     # display data
     #rainbow_cycle(0.01)  # rainbow cycle with 10ms delay per step
