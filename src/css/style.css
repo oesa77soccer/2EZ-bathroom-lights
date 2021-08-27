@@ -7,6 +7,7 @@ html {
   height: 100px;
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
+  margin: auto;
 }
 
 .bannertext {
@@ -60,7 +61,7 @@ html {
 .modebtn {
   width: 120px;
   height: 65px;
-  border-color: ;
+  border-color: rgb(226, 223, 223);
   border-radius: 10px;
   background: #fff;
   color: #000000;
