@@ -11,16 +11,17 @@ slider.oninput = function() {
   send(red);
 }
 
-function send(input) {
-  $.ajax({
-      type: "POST",
-      url: "/var/www/html/2EZ-bathroom-lights/src/send.py",
-      data: { param: input },
-      success: callbackFunc
-  });
-}
+function send(c) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", 'index.php', true);
 
-function callbackFunc(response) {
-  // do something with the response
-  console.log(response);
+  //Send the proper header information along with the request
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+  xhr.onreadystatechange = function() { // Call a function when the state changes.
+    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+      // Request finished. Do processing here.
+    }
+  }
+  xhr.send("red="+c);
 }

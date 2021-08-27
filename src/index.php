@@ -3,7 +3,7 @@
 <body>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  <input type="submit" value="rainbow" name="fname">
+  <input type="submit" value="rainbow" name="rainbow">
 </form>
 
 <div class="slidecontainer">
@@ -15,13 +15,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
-    $name = $_POST['fname'];
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        echo $name;
-        exec("python send.py");
-    }
+    $red = $_POST['red'];
+    //if (empty($name)) {
+    //    echo "Name is empty";
+    //} else {
+    //    echo $name;
+    exec("python send.py " . $red);
+    //}
 }
 ?>
 
