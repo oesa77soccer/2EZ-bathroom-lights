@@ -1,11 +1,12 @@
 .banner {
   width: 85%;
-  height: 5%;
+  height: 100px;
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
   color: #fff;
   text-align: center;
-  font-size: 4%;
+  font-size: 60px;
+  margin: auto;
 }
 
 .slidecontainer {
