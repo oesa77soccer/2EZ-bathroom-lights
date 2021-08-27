@@ -23,8 +23,8 @@
     </div>
 
     <div class="btncontainer">
-    <button class="modebtn" id="wipe_btn">Wipe</button>
-    <button class="modebtn" id="rainbow_btn">Rainbow</button>
+        <button class="modebtn" id="wipe_btn">Wipe</button>
+        <button class="modebtn" id="rainbow_btn">Rainbow</button>
     </div>
 </div>
 

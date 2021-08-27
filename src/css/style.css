@@ -3,7 +3,7 @@ html {
 }
 
 .banner {
-  width: 85%;
+  width: 95%;
   height: 100px;
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
@@ -19,6 +19,7 @@ html {
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
+  height: 120px;
   margin-top: 20px;
 }
 
@@ -51,9 +52,16 @@ html {
   cursor: pointer; /* Cursor on hover */
 }
 
+.buttoncontainer {
+  text-align: center;
+  margin: auto;
+}
+
 .modebtn {
   width: 120px;
   height: 65px;
+  border-color: ;
+  border-radius: 10px;
   background: #fff;
   color: #000000;
 }
