@@ -71,7 +71,7 @@ while True:
       args = data_str.split()
       mode = args[3]
       if mode == "wipe":
-        wipe(args[0], args[1], args[2]))
+        wipe((args[0], args[1], args[2]))
       else:
         rainbow_cycle(0.01)
       conn.sendall(data)
