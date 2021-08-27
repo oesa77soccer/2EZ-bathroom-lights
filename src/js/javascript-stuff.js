@@ -1,17 +1,41 @@
 var red = 0;
+var blue = 0;
+var green = 0;
+var mode = "wipe";
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+var red_slider = document.getElementById("red_slider");
+var green_slider = document.getElementById("green_slider");
+var blue_slider = document.getElementById("blue_slider");
 
+var red_val = document.getElementById("red_val");
+var green_val = document.getElementById("green_val");
+var blue_val = document.getElementById("blue_val");
+
+red_value.innerHTML = red_slider.value;
+green_value.innerHTML = green_slider.value;
+blue_value.innerHTML = blue_slider.value;
+
+// TODO: update only after last touch
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
+red_slider.oninput = function() {
   red = this.value;
-  output.innerHTML = red;
-  send(red);
+  red_val.innerHTML = red;
+  send();
 }
 
-function send(c) {
+green_slider.oninput = function() {
+  green = this.value;
+  green_val.innerHTML = green;
+  send();
+}
+
+blue_slider.oninput = function() {
+  blue = this.value;
+  blue_val.innerHTML = blue;
+  send();
+}
+
+function send() {
   var xhr = new XMLHttpRequest();
   xhr.open("POST", 'index.php', true);
 
@@ -23,5 +47,5 @@ function send(c) {
       // Request finished. Do processing here.
     }
   }
-  xhr.send("red="+c);
+  xhr.send("red="+red + "&green="+green + "&blue"+blue + "&mode"+mode);
 }
