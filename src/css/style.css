@@ -8,6 +8,7 @@ html {
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
   margin: auto;
+  text-align: center;
 }
 
 .bannertext {
@@ -36,6 +37,7 @@ html {
   opacity: 1; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
+  border-radius: 10px;
 }
 
 /* Mouse-over effects */
@@ -51,6 +53,7 @@ html {
   height: 120px; /* Slider handle height */
   background: #4cb897; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  border-radius: 10px;
 }
 
 .buttoncontainer {
