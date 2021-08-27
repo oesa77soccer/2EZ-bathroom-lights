@@ -1,9 +1,11 @@
 .banner {
   width: 85%;
-  height: 60px;
+  height: 5%;
   background-color: #04AA6D;
   border-radius: 15px 15px 0px 0px;
   color: #fff;
+  text-align: center;
+  font-size: 4%;
 }
 
 .slidecontainer {
@@ -14,8 +16,9 @@
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
+  text-align: center;
   width: 75%; /* Full-width */
-  height: 50px; /* Specified height */
+  height: 8%; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
