@@ -20,13 +20,8 @@
   <span id="blue_val">0</span>
 </div>
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  <input type="submit" value="Wipe" name="wipe" id="wipe">
-</form>
-
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  <input type="submit" value="Rainbow" name="rainbow" id="rainbow">
-</form>
+<button class="modebtn" id="wipe_btn">Wipe</button>
+<button class="modebtn" id="rainbow_btn">Rainbow</button>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

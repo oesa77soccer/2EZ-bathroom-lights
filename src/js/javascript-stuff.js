@@ -15,12 +15,21 @@ red_val.innerHTML = red_slider.value;
 green_val.innerHTML = green_slider.value;
 blue_val.innerHTML = blue_slider.value;
 
+document.getElementById("wipe_btn").addEventListener("click", function() {
+  mode = "wipe";
+  send();
+});
+
+document.getElementById("rainbow_btn").addEventListener("click", function() {
+  mode = "rainbow";
+  send();
+});
+
 // TODO: update only after last touch
 // Update the current slider value (each time you drag the slider handle)
 red_slider.oninput = function() {
   red = this.value;
   red_val.innerHTML = red;
-  console.log(red);
   send();
 }
 
