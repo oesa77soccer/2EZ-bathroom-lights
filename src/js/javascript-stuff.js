@@ -1,7 +1,7 @@
 var red = 0;
 var blue = 0;
 var green = 0;
-var mode = "wipe";
+var mode = "rainbow";
 
 var red_slider = document.getElementById("red_slider");
 var green_slider = document.getElementById("green_slider");
