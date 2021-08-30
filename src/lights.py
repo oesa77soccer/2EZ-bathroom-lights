@@ -17,7 +17,7 @@ pixels = neopixel.NeoPixel(
   pixel_pin, num_pixels, brightness=1, auto_write=False, pixel_order=ORDER
 )
 
-rainbow_cycle(0.01)
+red = (255, 0, 0)
 
 def wipe(color):
   print(wipe)
@@ -54,10 +54,10 @@ def rainbow_cycle(wait):
         pixels.show()
         time.sleep(wait)
 
+wipe(red)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('localhost', 50000))
-
 
 while True:
   #pixels.fill((255, 0, 0))
