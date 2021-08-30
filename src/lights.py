@@ -14,8 +14,10 @@ num_pixels = 150
 ORDER = neopixel.GRB
 
 pixels = neopixel.NeoPixel(
-  pixel_pin, num_pixels, brightness=0.8, auto_write=False, pixel_order=ORDER
+  pixel_pin, num_pixels, brightness=1, auto_write=False, pixel_order=ORDER
 )
+
+rainbow_cycle(0.01)
 
 def wipe(color):
   print(wipe)
