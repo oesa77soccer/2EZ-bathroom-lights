@@ -22,7 +22,7 @@
     <div class="valtext">Blue: <span id="blue_val">0</span></div>
     </div>
 
-    <div class="btncontainer">
+    <div class="btn-grid">
         <button class="modebtn" id="wipe_btn">Wipe</button>
         <button class="modebtn" id="rainbow_btn">Rainbow</button>
     </div>

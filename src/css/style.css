@@ -22,7 +22,7 @@ html {
 .slidecontainer {
   width: 100%; /* Width of the outside container */
   height: 120px;
-  margin-top: 20px;
+  margin: auto;
 }
 
 /* The slider itself */
@@ -56,9 +56,10 @@ html {
   border-radius: 10px;
 }
 
-.buttoncontainer {
-  text-align: center;
+.btn-grid {
+  display: grid;
   margin: auto;
+  grid-column: 1 / 2;
 }
 
 .modebtn {
