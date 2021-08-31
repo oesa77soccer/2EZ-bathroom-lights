@@ -47,7 +47,7 @@ blue_slider.oninput = function() {
 
 function send() {
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", 'index.php', true);
+  xhr.open("POST", '../index.php', true);
 
   //Send the proper header information along with the request
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -58,4 +58,5 @@ function send() {
     }
   }
   xhr.send("red="+red + "&green="+green + "&blue"+blue + "&mode"+mode);
+  console.log("Sent data.");
 }
