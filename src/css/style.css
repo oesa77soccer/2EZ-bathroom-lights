@@ -19,7 +19,7 @@ html {
   margin: auto;
 }
 
-.slidecontainer {
+.slidercontainer {
   width: 100%; /* Width of the outside container */
   height: 120px;
   margin: auto;
@@ -38,6 +38,7 @@ html {
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
   border-radius: 10px;
+  margin: auto;
 }
 
 /* Mouse-over effects */

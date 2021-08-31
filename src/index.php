@@ -4,22 +4,22 @@
 
 <div class=bodycontainer>
     <div class="banner">
-    <span class="bannertext">2EZ Lights</span>
+        <span class="bannertext">2EZ Lights</span>
     </div>
 
-    <div class="slidecontainer">
-    <input type="range" min="0" max="255" value="0" class="slider" id="red_slider">
-    <div class="valtext">Red: <span id="red_val">0</span></div>
+    <div class="slidercontainer">
+        <input type="range" min="0" max="255" value="0" class="slider" id="red_slider">
+        <div class="valtext">Red: <span id="red_val">0</span></div>
     </div>
 
-    <div class="slidecontainer">
-    <input type="range" min="0" max="255" value="0" class="slider" id="green_slider">
-    <div class="valtext">Green: <span id="green_val">0</span></div>
+    <div class="slidercontainer">
+        <input type="range" min="0" max="255" value="0" class="slider" id="green_slider">
+        <div class="valtext">Green: <span id="green_val">0</span></div>
     </div>
 
-    <div class="slidecontainer">
-    <input type="range" min="0" max="255" value="0" class="slider" id="blue_slider">
-    <div class="valtext">Blue: <span id="blue_val">0</span></div>
+    <div class="slidercontainer">
+        <input type="range" min="0" max="255" value="0" class="slider" id="blue_slider">
+        <div class="valtext">Blue: <span id="blue_val">0</span></div>
     </div>
 
     <div class="btn-grid">
