@@ -20,7 +20,7 @@ pixels = neopixel.NeoPixel(
 red = (255, 0, 0)
 
 def wipe(color):
-  print(wipe)
+  print(color)
   pixels.fill(color)
   pixels.show()
 

@@ -57,7 +57,7 @@ function send() {
       // Request finished. Do processing here.
     }
   }
-  var st = "red="+red + "&green="+green + "&blue"+blue + "&mode="+mode;
+  var st = "red="+red + "&green="+green + "&blue="+blue + "&mode="+mode;
   xhr.send(st);
   console.log(st);
 }
