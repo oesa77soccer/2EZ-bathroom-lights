@@ -21,8 +21,9 @@ html {
 
 .slidercontainer {
   width: 100%; /* Width of the outside container */
-  height: 120px;
-  margin: auto;
+  height: 150
+  px;
+  margin: 5%;
 }
 
 /* The slider itself */
